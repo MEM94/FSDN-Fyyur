@@ -29,6 +29,7 @@ from models import app, db, Venue, Artist, Show
 #----------------------------------------------------------------------------#
 
 app = Flask(__name__)
+app.config.from_object('config')
 moment = Moment(app)
 db.init_app(app)
 
